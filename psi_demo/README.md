@@ -11,17 +11,15 @@ PSI Demo project demonstrates working with the PSI Navigation by implementing `A
 
 ### Actions
 
-| ID                  | Implementation                                          | Extension Point Class    |
-| ------------------- | ------------------------------------------------------- | ------------------------ |
-| `PsiNavigationDemo` | [PsiNavigationDemoAction][file:PsiNavigationDemoAction] | [AnAction][sdk:AnAction] |
+| ID                  | Implementation                                          | Base Action Class |
+| ------------------- | ------------------------------------------------------- | ----------------- |
+| `PsiNavigationDemo` | [PsiNavigationDemoAction][file:PsiNavigationDemoAction] | `AnAction`        |
 
 *Reference: [Action System in IntelliJ SDK Docs][docs:actions]*
 
 
-[docs]: https://www.jetbrains.org/intellij/sdk/docs
-[docs:actions]: https://www.jetbrains.org/intellij/sdk/docs/basics/action_system.html
-[docs:navigating_psi]: https://jetbrains.org/intellij/sdk/docs/basics/architectural_overview/navigating_psi.html
+[docs]: https://plugins.jetbrains.com/docs/intellij/
+[docs:actions]: https://plugins.jetbrains.com/docs/intellij/basic-action-system.html
+[docs:navigating_psi]: https://plugins.jetbrains.com/docs/intellij/navigating-psi.html
 
 [file:PsiNavigationDemoAction]: ./src/main/java/org/intellij/sdk/psi/PsiNavigationDemoAction.java
-
-[sdk:AnAction]: upsource:///platform/editor-ui-api/src/com/intellij/openapi/actionSystem/AnAction.java

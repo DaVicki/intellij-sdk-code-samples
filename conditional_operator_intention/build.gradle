@@ -2,7 +2,7 @@
 
 plugins {
   id 'java'
-  id 'org.jetbrains.intellij' version '0.6.3'
+  id 'org.jetbrains.intellij' version '0.6.5'
 }
 
 group 'org.intellij.sdk'
@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-  testImplementation group: 'junit', name: 'junit', version: '4.12'
+  testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }
 
 test {
@@ -37,5 +37,5 @@ buildSearchableOptions {
 patchPluginXml {
   version = project.version
   sinceBuild = '202'
-  untilBuild = '202.*'
+  untilBuild = '203.*'
 }

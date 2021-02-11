@@ -12,24 +12,22 @@ After opening each one, a message dialog is presented to the user with the curre
 
 | Name                              | Implementation                                        | Extension Point Class |
 | --------------------------------- | ----------------------------------------------------- | --------------------- |
-| `com.intellij.applicationService` | [ProjectCountingService][file:ProjectCountingService] |                       |
+| `com.intellij.applicationService` | [ProjectCountingService][file:ProjectCountingService] | n/a                   |
 
 *Reference: [Plugin Extension Points in IntelliJ SDK Docs][docs:ep]*
 
 ### Application Listeners
 
-| Name     | Implementation                                            | Extension Point Class                                |
-| -------- | --------------------------------------------------------- | ---------------------------------------------------- |
-| listener | [ProjectOpenCloseListener][file:ProjectOpenCloseListener] | [ProjectManagerListener][sdk:ProjectManagerListener] |
+| Name     | Implementation                                            | Listener Class           |
+| -------- | --------------------------------------------------------- | ------------------------ |
+| listener | [ProjectOpenCloseListener][file:ProjectOpenCloseListener] | `ProjectManagerListener` |
 
 *Reference: [Plugin Listeners in IntelliJ SDK Docs][docs:listeners]*
 
-[docs]: https://www.jetbrains.org/intellij/sdk/docs
-[docs:plugin_services]: https://jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_services.html
-[docs:ep]: https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_extensions.html
-[docs:listeners]: https://jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_listeners.html
+[docs]: https://plugins.jetbrains.com/docs/intellij/
+[docs:plugin_services]: https://plugins.jetbrains.com/docs/intellij/plugin-services.html
+[docs:ep]: https://plugins.jetbrains.com/docs/intellij/plugin-extensions.html
+[docs:listeners]: https://plugins.jetbrains.com/docs/intellij/plugin-listeners.html
 
 [file:ProjectCountingService]: ./src/main/java/org/intellij/sdk/maxOpenProjects/ProjectCountingService.java
 [file:ProjectOpenCloseListener]: ./src/main/java/org/intellij/sdk/maxOpenProjects/ProjectOpenCloseListener.java
-
-[sdk:ProjectManagerListener]: upsource:///platform/projectModel-api/src/com/intellij/openapi/project/ProjectManagerListener.java

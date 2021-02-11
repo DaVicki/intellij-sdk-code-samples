@@ -8,17 +8,15 @@ This sample implementation adds a new *SDK Demo Framework* support in the Java t
 
 ### Extension Points
 
-| Name                          | Implementation                      | Extension Point Class                  |
-| ----------------------------- | ----------------------------------- | -------------------------------------- |
-| `com.intellij.framework.type` | [DemoFramework][file:DemoFramework] | [FrameworkTypeEx][sdk:FrameworkTypeEx] |
+| Name                          | Implementation                      | Extension Point Class |
+| ----------------------------- | ----------------------------------- | --------------------- |
+| `com.intellij.framework.type` | [DemoFramework][file:DemoFramework] | `FrameworkTypeEx`     |
 
 *Reference: [Plugin Extension Points in IntelliJ SDK Docs][docs:ep]*
 
 
-[docs]: https://www.jetbrains.org/intellij/sdk/docs
-[docs:supporting_frameworks]: https://jetbrains.org/intellij/sdk/docs/tutorials/framework.html
-[docs:ep]: https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_extensions.html
+[docs]: https://plugins.jetbrains.com/docs/intellij/
+[docs:supporting_frameworks]: https://plugins.jetbrains.com/docs/intellij/framework.html
+[docs:ep]: https://plugins.jetbrains.com/docs/intellij/plugin-extensions.html
 
 [file:DemoFramework]: ./src/main/java/org/intellij/sdk/framework/DemoFramework.java
-
-[sdk:FrameworkTypeEx]: upsource:///java/idea-ui/src/com/intellij/framework/FrameworkTypeEx.java

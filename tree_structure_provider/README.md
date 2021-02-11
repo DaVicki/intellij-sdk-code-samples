@@ -11,17 +11,15 @@ Otherwise, an element is not included in the results list, so only directories a
 
 ### Extension Points
 
-| Name                                 | Implementation                                                      | Extension Point Class                              |
-| ------------------------------------ | ------------------------------------------------------------------- | -------------------------------------------------- |
-| `com.intellij.treeStructureProvider` | [TextOnlyTreeStructureProvider][file:TextOnlyTreeStructureProvider] | [TreeStructureProvider][sdk:TreeStructureProvider] |
+| Name                                 | Implementation                                                      | Extension Point Class   |
+| ------------------------------------ | ------------------------------------------------------------------- | ----------------------- |
+| `com.intellij.treeStructureProvider` | [TextOnlyTreeStructureProvider][file:TextOnlyTreeStructureProvider] | `TreeStructureProvider` |
 
 *Reference: [Plugin Extension Points in IntelliJ SDK Docs][docs:ep]*
 
 
-[docs]: https://www.jetbrains.org/intellij/sdk/docs
-[docs:tree_structure_view]: https://www.jetbrains.org/intellij/sdk/docs/tutorials/tree_structure_view.html
-[docs:ep]: https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_extensions.html
+[docs]: https://plugins.jetbrains.com/docs/intellij/
+[docs:tree_structure_view]: https://plugins.jetbrains.com/docs/intellij/tree-structure-view.html
+[docs:ep]: https://plugins.jetbrains.com/docs/intellij/plugin-extensions.html
 
 [file:TextOnlyTreeStructureProvider]: ./src/main/java/org/intellij/sdk/treeStructureProvider/TextOnlyTreeStructureProvider.java
-
-[sdk:TreeStructureProvider]: upsource:///platform/editor-ui-api/src/com/intellij/ide/projectView/TreeStructureProvider.java
